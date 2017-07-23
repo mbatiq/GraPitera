@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\Monster.cs" />
     <Compile Include="Assets\Scripts\Monster\Wilk.cs" />
+    <Compile Include="Assets\Scripts\NowaKostka.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\plecak.cs" />
     <Compile Include="Assets\Scripts\score.cs" />
