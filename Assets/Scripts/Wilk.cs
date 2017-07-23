@@ -5,4 +5,5 @@ using UnityEngine;
 public class Wilk : Monster {
 
     //zmiana w klasie
+    //poprawka
 }

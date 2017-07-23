@@ -19,6 +19,7 @@ public class Monster : MonoBehaviour {
     private void Update()
     {
         //poprawka
+        //kolejna poprawka
         //funkcja odpawiadająca za to ze kazdy Monster tej klasy porusza sie do przeciwnika gdy ten zblizy
         //sie na jakas odleglosc itd. 
         if (!hasInteracted && playerAgent != null && !playerAgent.pathPending)

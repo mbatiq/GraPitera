@@ -90,6 +90,7 @@ public class WorldInteraction : MonoBehaviour {
                 interactedObject.GetComponent<Interactable>().MoveToInteraction(playerAgent);
             }
             /* poprawka
+             * kolejna poprawka
              * Zaraz to ogarne tylko chce sprawdzic GiTa trzeba wstawic enum i switch kta funkcja ma sie wykonywac
              * 
              * 

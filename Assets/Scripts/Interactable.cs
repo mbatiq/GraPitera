@@ -7,7 +7,7 @@ public class Interactable : MonoBehaviour {
     [HideInInspector]
 
     //poprawka
-
+    // kolejna poprawka
     
     public NavMeshAgent playerAgent;
     public bool hasInteracted;
