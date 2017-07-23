@@ -92,12 +92,12 @@
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\Monster.cs" />
+    <Compile Include="Assets\Scripts\Monster\Wilk.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\plecak.cs" />
     <Compile Include="Assets\Scripts\score.cs" />
     <Compile Include="Assets\Scripts\StatBonus.cs" />
     <Compile Include="Assets\Scripts\StatCharacter.cs" />
-    <Compile Include="Assets\Scripts\Wilk.cs" />
     <Compile Include="Assets\Scripts\WorldInteraction.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,4 +6,9 @@ public class Wilk : Monster {
 
     //zmiana w klasie
     //poprawka
+    /*
+    public override void Interact()
+    {
+      //  Debug.Log("Interact() with class Wilk.");
+    }*/
 }
