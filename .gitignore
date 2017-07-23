@@ -5,3 +5,20 @@ temp
 /Temp
 /temp
 
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+
+#VS Solution i inne pierdy
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+
+#Unity3d
+sysinfo.txr
