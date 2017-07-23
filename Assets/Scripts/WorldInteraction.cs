@@ -89,7 +89,8 @@ public class WorldInteraction : MonoBehaviour {
                 Debug.DrawLine(interactionRay.origin, InteractionInfo.point);
                 interactedObject.GetComponent<Interactable>().MoveToInteraction(playerAgent);
             }
-            /* Zaraz to ogarne tylko chce sprawdzic GiTa trzeba wstawic enum i switch kta funkcja ma sie wykonywac
+            /* poprawka
+             * Zaraz to ogarne tylko chce sprawdzic GiTa trzeba wstawic enum i switch kta funkcja ma sie wykonywac
              * 
              * 
             if (interactedObject.tag == "Monster")

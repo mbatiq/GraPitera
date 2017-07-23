@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour {
     [HideInInspector]
+
+    //poprawka
+
     
     public NavMeshAgent playerAgent;
     public bool hasInteracted;
