@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/sceny/scenaZWilkiem.unity
+- path: Assets/sceny/scenaZNowaKostka.unity
   isLoaded: 1
   isActive: 1
