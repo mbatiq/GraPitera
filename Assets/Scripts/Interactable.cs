@@ -7,34 +7,34 @@ public class Interactable : MonoBehaviour {
     [HideInInspector]
     
     public NavMeshAgent playerAgent;
-
     public bool hasInteracted;
 
 
     public virtual void MoveToInteraction(NavMeshAgent playerAgent)
     {
+        hasInteracted = false;
         this.playerAgent = playerAgent;
+        playerAgent.stoppingDistance = 3f;
+        playerAgent.destination = transform.position;
+    }
 
+    private void Update()
+    {
         if (!hasInteracted && playerAgent != null && !playerAgent.pathPending)
         {
             playerAgent.GetComponent<WorldInteraction>().grounded = false;
             if (playerAgent.remainingDistance <= playerAgent.stoppingDistance)
             {
+                Interact();
                 hasInteracted = true;
                 playerAgent.GetComponent<WorldInteraction>().grounded = true;
             }
         }
     }
 
-    private void Update()
-    {
-
-        Interact();
-    }
-
     public virtual void Interact()
     {
-        Debug.Log("Interact() with base class");
+        Debug.Log("Interact() with base class Interactable.");
     }
 
 }

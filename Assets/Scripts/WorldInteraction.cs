@@ -87,19 +87,16 @@ public class WorldInteraction : MonoBehaviour {
             if(interactedObject.tag == "Interatable Object")
             {
                 Debug.DrawLine(interactionRay.origin, InteractionInfo.point);
-
-                interactedObject.GetComponent<WorldInteraction>();
-
-                if (!hasInteracted && playerAgent != null && !playerAgent.pathPending)
-                {
-                    playerAgent.GetComponent<WorldInteraction>().grounded = false;
-                    if (playerAgent.remainingDistance <= playerAgent.stoppingDistance)
-                    {
-                        hasInteracted = true;
-                        playerAgent.GetComponent<WorldInteraction>().grounded = true;
-                    }
-                }
+                interactedObject.GetComponent<Interactable>().MoveToInteraction(playerAgent);
             }
+            /* Zaraz to ogarne tylko chce sprawdzic GiTa trzeba wstawic enum i switch kta funkcja ma sie wykonywac
+             * 
+             * 
+            if (interactedObject.tag == "Monster")
+            {
+                Debug.DrawLine(interactionRay.origin, InteractionInfo.point);
+                interactedObject.GetComponent<Monster>().MoveToInteraction(playerAgent);
+            }*/
             else
             {
                 playerAgent.stoppingDistance = 0f;
